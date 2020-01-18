@@ -1,0 +1,8 @@
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\bin\Debug\netstandard2.0\SIS.WebServer.deps.json
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\bin\Debug\netstandard2.0\SIS.WebServer.dll
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\bin\Debug\netstandard2.0\SIS.WebServer.pdb
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\obj\Debug\netstandard2.0\SIS.WebServer.csprojAssemblyReference.cache
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\obj\Debug\netstandard2.0\SIS.WebServer.AssemblyInfoInputs.cache
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\obj\Debug\netstandard2.0\SIS.WebServer.AssemblyInfo.cs
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\obj\Debug\netstandard2.0\SIS.WebServer.dll
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\obj\Debug\netstandard2.0\SIS.WebServer.pdb

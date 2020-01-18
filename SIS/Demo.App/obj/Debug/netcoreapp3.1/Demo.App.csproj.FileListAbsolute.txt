@@ -1,0 +1,14 @@
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\Demo.App.exe
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\Demo.App.deps.json
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\Demo.App.runtimeconfig.json
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\Demo.App.runtimeconfig.dev.json
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\Demo.App.dll
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\Demo.App.pdb
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\SIS.HTTP.dll
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\SIS.HTTP.pdb
+D:\softuni\C# Web Basics\SIS\Demo.App\obj\Debug\netcoreapp3.1\Demo.App.csprojAssemblyReference.cache
+D:\softuni\C# Web Basics\SIS\Demo.App\obj\Debug\netcoreapp3.1\Demo.App.AssemblyInfoInputs.cache
+D:\softuni\C# Web Basics\SIS\Demo.App\obj\Debug\netcoreapp3.1\Demo.App.AssemblyInfo.cs
+D:\softuni\C# Web Basics\SIS\Demo.App\obj\Debug\netcoreapp3.1\Demo.App.csproj.CopyComplete
+D:\softuni\C# Web Basics\SIS\Demo.App\obj\Debug\netcoreapp3.1\Demo.App.dll
+D:\softuni\C# Web Basics\SIS\Demo.App\obj\Debug\netcoreapp3.1\Demo.App.pdb

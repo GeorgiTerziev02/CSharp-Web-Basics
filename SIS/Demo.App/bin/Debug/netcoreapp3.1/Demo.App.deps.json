@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Demo.App/1.0.0": {
+        "dependencies": {
+          "SIS.HTTP": "1.0.0"
+        },
+        "runtime": {
+          "Demo.App.dll": {}
+        }
+      },
+      "SIS.HTTP/1.0.0": {
+        "runtime": {
+          "SIS.HTTP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Demo.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SIS.HTTP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
