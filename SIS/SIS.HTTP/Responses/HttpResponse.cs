@@ -17,6 +17,7 @@
         }
 
         public HttpResponse(HttpResponseStatusCode statusCode)
+            :this()
         {
             CoreValidator.ThrowIfNull(statusCode, nameof(statusCode));
             this.StatusCode = statusCode;
@@ -35,7 +36,21 @@
 
         public byte[] GetBytes()
         {
-            throw new System.NotImplementedException();
+            byte[] httpResponseBytesWithoutBody = Encoding.UTF8.GetBytes(this.ToString());
+
+            byte[] httpResponseBytesWithBody = new byte[httpResponseBytesWithoutBody.Length + this.Content.Length];
+
+            for (int i = 0; i < httpResponseBytesWithoutBody.Length; i++)
+            {
+                httpResponseBytesWithBody[i] = httpResponseBytesWithoutBody[i];
+            }
+
+            for (int i = 0; i < httpResponseBytesWithBody.Length - httpResponseBytesWithoutBody.Length; i++)
+            {
+                httpResponseBytesWithBody[i + httpResponseBytesWithoutBody.Length] = this.Content[i];
+            }
+
+            return httpResponseBytesWithBody;
         }
 
         public override string ToString()

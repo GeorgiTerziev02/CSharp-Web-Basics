@@ -49,7 +49,9 @@
 
         private bool IsValidRequestQueryString(string queryString, string[] queryParams)
         {
-            throw new NotImplementedException();
+            CoreValidator.ThrowIfNullOrEmpty(queryString, nameof(queryString));
+
+            return true;   
         }
 
         private void ParseRequestMethod(string[] requestLineParams)
@@ -115,22 +117,25 @@
 
         private void ParseRequestFormDataParameters(string requestBody)
         {
-            var parametersPairs = requestBody
-                .Split('&')
-                .Select(plainQueryParameter => plainQueryParameter.Split('='))
-                .ToList();
-
-            foreach (var pair in parametersPairs)
+            if (!string.IsNullOrEmpty(requestBody))
             {
-                string key = pair[0];
-                string value = pair[1];
+                var parametersPairs = requestBody
+                    .Split('&')
+                    .Select(plainQueryParameter => plainQueryParameter.Split('='))
+                    .ToList();
 
-                if(!this.FormData.ContainsKey(key))
+                foreach (var pair in parametersPairs)
                 {
-                    this.FormData.Add(key, new HashSet<string>());
-                }
+                    string key = pair[0];
+                    string value = pair[1];
 
-                this.FormData[key].Add(WebUtility.UrlDecode(value));
+                    if (!this.FormData.ContainsKey(key))
+                    {
+                        this.FormData.Add(key, new HashSet<string>());
+                    }
+
+                    this.FormData[key].Add(WebUtility.UrlDecode(value));
+                }
             }
         }
 

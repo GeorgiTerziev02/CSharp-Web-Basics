@@ -1,5 +1,10 @@
-﻿using SIS.HTTP.Request;
-using System;
+﻿using Demo.App.Controllers;
+using SIS.HTTP.Enums;
+using SIS.HTTP.Request;
+using SIS.WebServer;
+using SIS.WebServer.Result;
+using SIS.WebServer.Routing;
+using SIS.WebServer.Routing.Contracts;
 
 namespace Demo.App
 {
@@ -7,17 +12,15 @@ namespace Demo.App
     {
         static void Main(string[] args)
         {
-            string request = 
-                "POST /url/asd?name=john&id=1#fragment HTTP/1.1\r\n" +
-                "Authorization: Basic 312312312\r\n" +
-                "Date: " +DateTime.Now + "\r\n" +
-                "Host: localhost:5000\r\n" +
-                "\r\n" +
-                "username=johndoe&password=123";
+            IServerRoutingTable serverRoutingTable = new ServerRoutingTable();
 
-            HttpRequest httpRequest = new HttpRequest(request);
+            serverRoutingTable.Add(HttpRequestMethod.Get, "/", httpRequest =>
+            {
+                return new HomeController().Home(httpRequest);
+            });
 
-            var a = 5;
+            Server server = new Server(8000, serverRoutingTable);
+            server.Run();
         }
     }
 }

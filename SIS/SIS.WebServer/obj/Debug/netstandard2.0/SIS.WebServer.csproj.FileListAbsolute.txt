@@ -6,3 +6,6 @@ D:\softuni\C# Web Basics\SIS\SIS.WebServer\obj\Debug\netstandard2.0\SIS.WebServe
 D:\softuni\C# Web Basics\SIS\SIS.WebServer\obj\Debug\netstandard2.0\SIS.WebServer.AssemblyInfo.cs
 D:\softuni\C# Web Basics\SIS\SIS.WebServer\obj\Debug\netstandard2.0\SIS.WebServer.dll
 D:\softuni\C# Web Basics\SIS\SIS.WebServer\obj\Debug\netstandard2.0\SIS.WebServer.pdb
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\bin\Debug\netstandard2.0\SIS.HTTP.dll
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\bin\Debug\netstandard2.0\SIS.HTTP.pdb
+D:\softuni\C# Web Basics\SIS\SIS.WebServer\obj\Debug\netstandard2.0\SIS.WebServer.csproj.CopyComplete

@@ -12,3 +12,6 @@ D:\softuni\C# Web Basics\SIS\Demo.App\obj\Debug\netcoreapp3.1\Demo.App.AssemblyI
 D:\softuni\C# Web Basics\SIS\Demo.App\obj\Debug\netcoreapp3.1\Demo.App.csproj.CopyComplete
 D:\softuni\C# Web Basics\SIS\Demo.App\obj\Debug\netcoreapp3.1\Demo.App.dll
 D:\softuni\C# Web Basics\SIS\Demo.App\obj\Debug\netcoreapp3.1\Demo.App.pdb
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\SIS.WebServer.dll
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\SIS.WebServer.pdb
+D:\softuni\C# Web Basics\SIS\Demo.App\bin\Debug\netcoreapp3.1\Views\Home\Home.html

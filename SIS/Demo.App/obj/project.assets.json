@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/SIS.HTTP.dll": {}
         }
+      },
+      "SIS.WebServer/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "SIS.HTTP": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SIS.WebServer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SIS.WebServer.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../SIS.HTTP/SIS.HTTP.csproj",
       "msbuildProject": "../SIS.HTTP/SIS.HTTP.csproj"
+    },
+    "SIS.WebServer/1.0.0": {
+      "type": "project",
+      "path": "../SIS.WebServer/SIS.WebServer.csproj",
+      "msbuildProject": "../SIS.WebServer/SIS.WebServer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "SIS.HTTP >= 1.0.0"
+      "SIS.HTTP >= 1.0.0",
+      "SIS.WebServer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -58,6 +77,9 @@
           "projectReferences": {
             "D:\\softuni\\C# Web Basics\\SIS\\SIS.HTTP\\SIS.HTTP.csproj": {
               "projectPath": "D:\\softuni\\C# Web Basics\\SIS\\SIS.HTTP\\SIS.HTTP.csproj"
+            },
+            "D:\\softuni\\C# Web Basics\\SIS\\SIS.WebServer\\SIS.WebServer.csproj": {
+              "projectPath": "D:\\softuni\\C# Web Basics\\SIS\\SIS.WebServer\\SIS.WebServer.csproj"
             }
           }
         }
