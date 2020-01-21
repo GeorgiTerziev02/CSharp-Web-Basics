@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace HttpRequester
@@ -31,8 +32,10 @@ namespace HttpRequester
 <input type=text name='username' />
 <input type=password name='password' />
 <input type=submit value='Login' />
-</form>";
+</form>"
++"<h1>" + DateTime.UtcNow + "</h1>" ;
 
+                Thread.Sleep(4000);
                 //we dont user environment.newline
                 string response = "HTTP/1.0 200 OK" + NewLine +
                                       "Server: SoftUniServer/1.0" + NewLine +

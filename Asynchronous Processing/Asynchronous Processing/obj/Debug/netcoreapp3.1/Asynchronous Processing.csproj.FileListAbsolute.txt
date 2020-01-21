@@ -1,0 +1,11 @@
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\bin\Debug\netcoreapp3.1\Asynchronous Processing.exe
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\bin\Debug\netcoreapp3.1\Asynchronous Processing.deps.json
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\bin\Debug\netcoreapp3.1\Asynchronous Processing.runtimeconfig.json
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\bin\Debug\netcoreapp3.1\Asynchronous Processing.runtimeconfig.dev.json
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\bin\Debug\netcoreapp3.1\Asynchronous Processing.dll
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\bin\Debug\netcoreapp3.1\Asynchronous Processing.pdb
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\obj\Debug\netcoreapp3.1\Asynchronous Processing.csprojAssemblyReference.cache
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\obj\Debug\netcoreapp3.1\Asynchronous Processing.AssemblyInfoInputs.cache
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\obj\Debug\netcoreapp3.1\Asynchronous Processing.AssemblyInfo.cs
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\obj\Debug\netcoreapp3.1\Asynchronous Processing.dll
+D:\softuni\C# Web Basics\Asynchronous Processing\Asynchronous Processing\obj\Debug\netcoreapp3.1\Asynchronous Processing.pdb
