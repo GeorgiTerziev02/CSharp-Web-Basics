@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -9,47 +10,59 @@ namespace Asynchronous_Processing
 {
     class Program
     {
-        static void Exception()
+        static async Task Exception()
         {
-            throw new Exception("eee");
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync("https://softuni.bg");
         }
 
-        static void Main(string[] args)
+        //public async Task<IActionResult> SaveData()
+        //{
+        //    //...
+        //    //...
+        //    await dbContext.SaveChangesAsyncs();
+        //    //..
+        //    return this.view();
+        //}
+
+        static async Task Main(string[] args)
         {
             //TASK PARALLEL LIBRARY (TPL)
+            var httpClient = new HttpClient();
+            var httpResponse = await httpClient.GetAsync("https://softuni.bg");
 
+            var result = await httpResponse.Content.ReadAsStringAsync();
+            Console.WriteLine(result);
 
+            //Task.Run(() =>
+            //{
+            //    for (int i = 0; i < 100; i++)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}).ContinueWith((previousTask) =>
+            //{
+            //    for (int i = 0; i < 1000; i++)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
 
-            Task.Run(() =>
-            {
-                for (int i = 0; i < 100; i++)
-                {
-                    Console.WriteLine(i);
-                }
-            }).ContinueWith((previousTask) =>
-            {
-                for (int i = 0; i < 1000; i++)
-                {
-                    Console.WriteLine(i);
-                }
-            
-            });
-        
-            
-            Task.Run(() =>
-            {
-                for (int i = 300; i < 500; i++)
-                {
-                    Console.WriteLine(i);
-                }
-            });
+            //});    
 
-            while (true)
-            {
-                var line = Console.ReadLine();
-                Console.WriteLine(line.ToUpper());
-            }
-            
+            //Task.Run(() =>
+            //{
+            //    for (int i = 300; i < 500; i++)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //});
+
+            //while (true)
+            //{
+            //    var line = Console.ReadLine();
+            //    Console.WriteLine(line.ToUpper());
+            //}
+
 
             // CANT CATCH THREAD EXCEPTION
             //try
@@ -64,8 +77,7 @@ namespace Asynchronous_Processing
             //}
 
 
-
-            Stopwatch sw = Stopwatch.StartNew();
+            //Stopwatch sw = Stopwatch.StartNew();
 
             // DEAD LOCK
             //var lockObj1 = new object();
@@ -112,67 +124,36 @@ namespace Asynchronous_Processing
             //    });
             //}
 
-            return;
-            
-            //var lockObj = new object();
-            //decimal money = 0;
-            //int count = 0;
+            //return;
 
-            //var thread1 = new Thread(()=>
-            //{
-            //    for (int i = 1; i <= 500000; i++)
-            //    {
-            //        bool isPrime = true;
+            var lockObj = new object();
+            int count = 0;
+            var sw = Stopwatch.StartNew();
 
-            //        for (int j = 2; j <= Math.Sqrt(i); j++)
-            //        {
-            //            if (i % j == 0)
-            //            {
-            //                isPrime = false;
-            //            }
-            //        }
+            //for (int i = 1; i <= 1000000; i++)
+            Parallel.For(1, 1000001, (i) =>
+         {
+             bool isPrime = true;
 
-            //        if (isPrime)
-            //        {
-            //            lock (lockObj)
-            //            {
-            //                count++;
-            //            }
-            //        }
-            //    }
-            //});
-            //thread1.Start();
+             for (int j = 2; j <= Math.Sqrt(i); j++)
+             {
+                 if (i % j == 0)
+                 {
+                     isPrime = false;
+                 }
+             }
 
-            //var thread2 = new Thread(()=>
-            //{
-            //    for (int i = 500001; i <= 1000000; i++)
-            //    {
-            //        bool isPrime = true;
+             if (isPrime)
+             {
+                 lock (lockObj)
+                 {
+                     count++;
+                 }
+             }
+         });
 
-            //        for (int j = 2; j <= Math.Sqrt(i); j++)
-            //        {
-            //            if (i % j == 0)
-            //            {
-            //                isPrime = false;
-            //            }
-            //        }
-
-            //        if (isPrime)
-            //        {
-            //            lock (lockObj)
-            //            {
-            //                count++;
-            //            }
-            //        }
-            //    }
-            //});
-            //thread2.Start();
-
-            //thread1.Join();
-            //thread2.Join();
-
-            //Console.WriteLine(count);
-            //Console.WriteLine(sw.Elapsed);
+            Console.WriteLine(count);
+            Console.WriteLine(sw.Elapsed);
         }
 
         private static void MyThreadMainMethod()
