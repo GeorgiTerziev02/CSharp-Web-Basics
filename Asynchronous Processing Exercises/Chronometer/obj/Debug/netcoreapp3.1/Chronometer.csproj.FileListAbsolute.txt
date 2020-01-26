@@ -1,0 +1,11 @@
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\bin\Debug\netcoreapp3.1\Chronometer.exe
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\bin\Debug\netcoreapp3.1\Chronometer.deps.json
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\bin\Debug\netcoreapp3.1\Chronometer.runtimeconfig.json
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\bin\Debug\netcoreapp3.1\Chronometer.runtimeconfig.dev.json
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\bin\Debug\netcoreapp3.1\Chronometer.dll
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\bin\Debug\netcoreapp3.1\Chronometer.pdb
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\obj\Debug\netcoreapp3.1\Chronometer.csprojAssemblyReference.cache
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\obj\Debug\netcoreapp3.1\Chronometer.AssemblyInfoInputs.cache
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\obj\Debug\netcoreapp3.1\Chronometer.AssemblyInfo.cs
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\obj\Debug\netcoreapp3.1\Chronometer.dll
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Chronometer\obj\Debug\netcoreapp3.1\Chronometer.pdb

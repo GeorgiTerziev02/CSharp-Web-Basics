@@ -1,0 +1,11 @@
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\bin\Debug\netcoreapp3.1\Parallel_MergeSort.exe
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\bin\Debug\netcoreapp3.1\Parallel_MergeSort.deps.json
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\bin\Debug\netcoreapp3.1\Parallel_MergeSort.runtimeconfig.json
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\bin\Debug\netcoreapp3.1\Parallel_MergeSort.runtimeconfig.dev.json
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\bin\Debug\netcoreapp3.1\Parallel_MergeSort.dll
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\bin\Debug\netcoreapp3.1\Parallel_MergeSort.pdb
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\obj\Debug\netcoreapp3.1\Parallel_MergeSort.csprojAssemblyReference.cache
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\obj\Debug\netcoreapp3.1\Parallel_MergeSort.AssemblyInfoInputs.cache
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\obj\Debug\netcoreapp3.1\Parallel_MergeSort.AssemblyInfo.cs
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\obj\Debug\netcoreapp3.1\Parallel_MergeSort.dll
+D:\softuni\C# Web Basics\Asynchronous Processing Exercises\Parallel_MergeSort\obj\Debug\netcoreapp3.1\Parallel_MergeSort.pdb
