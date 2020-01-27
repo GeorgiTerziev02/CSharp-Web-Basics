@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -9,13 +10,13 @@ namespace Parallel_MergeSort
     {
         static void Main(string[] args)
         {
-            int worker = 0;
-            int threads = 0;
-            ThreadPool.GetAvailableThreads(out worker, out threads);
+            //int worker = 0;
+            //int threads = 0;
+            //ThreadPool.GetAvailableThreads(out worker, out threads);
 
-            Console.WriteLine("Thread pool threads available at startup: ");
-            Console.WriteLine("   Worker threads: {0:N0}", worker);
-            Console.WriteLine("   Asynchronous I/O threads: {0:N0}", threads);
+            //Console.WriteLine("Thread pool threads available at startup: ");
+            //Console.WriteLine("   Worker threads: {0:N0}", worker);
+            //Console.WriteLine("   Asynchronous I/O threads: {0:N0}", threads);
 
             var list = new List<int>();
 
@@ -24,9 +25,13 @@ namespace Parallel_MergeSort
                 list.Add(i);
             }
 
-            //list = MergeSort(list);
-            list = ParallelMergeSort(list, threads);
+            var numberOfCores = Environment.ProcessorCount;
 
+            Stopwatch sw = Stopwatch.StartNew();
+            //list = MergeSort(list);
+            list = ParallelMergeSort(list, numberOfCores);
+
+            Console.WriteLine(sw.Elapsed);
             Console.WriteLine(string.Join(", ", list));
         }
 
@@ -52,6 +57,7 @@ namespace Parallel_MergeSort
                 right.Add(listToSort[i]);
             }
 
+            //threads/2 so we can have for both the same number of threads available
             var thread1 = new Thread(() =>
                 left = ParallelMergeSort(left, threads/2));
             var thread2 = new Thread(() =>
@@ -87,18 +93,8 @@ namespace Parallel_MergeSort
                 right.Add(listToSort[i]);
             }
 
-            //left = MergeSort(left);
-            //right = MergeSort(right);
-
-            var thread1 = new Thread(() =>
-                left = MergeSort(left));
-            var thread2 = new Thread(() =>
-            right = MergeSort(right));
-
-            thread1.Start();
-            thread2.Start();
-            thread1.Join();
-            thread2.Join();
+            left = MergeSort(left);
+            right = MergeSort(right);
 
             return Merge(left, right);
         }
