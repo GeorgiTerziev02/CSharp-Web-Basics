@@ -42,14 +42,14 @@
 
                 var client = this.tcpListener.AcceptSocket();
 
-                this.Listen(client);
+                Task.Run(() => this.Listen(client));
             }
         }
 
-        private void Listen(Socket client)
+        private async Task Listen(Socket client)
         {
             var conntectionHandler = new ConnectionHandler(client, this.serverRoutingTable);
-            conntectionHandler.ProcessRequest();
+            await conntectionHandler.ProcessRequestAsync();
         }
     }
 }
