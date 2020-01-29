@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -12,6 +14,7 @@ namespace HttpRequester
     class Program
     {
         const string NewLine = "\r\n";
+        static Dictionary<string, int> SessionStore = new Dictionary<string, int>();
 
         static async Task Main(string[] args)
         {
@@ -35,19 +38,26 @@ namespace HttpRequester
             int bytesRead = await networkStream.ReadAsync(requestBytes, 0, requestBytes.Length);
             string request = Encoding.UTF8.GetString(requestBytes, 0, bytesRead);
 
-            string responseText = @"<form action='/Account/Login' method='post'>
-<input type=date name='date' />
-<input type=text name='username' />
-<input type=password name='password' />
-<input type=submit value='Login' />
-</form>"
-+ "<h1>" + DateTime.UtcNow + "</h1>";
-
-            Thread.Sleep(4000);
-            //we dont user environment.newline
+            var sid = Regex.Match(request, @"sid=[^\n]*\n").Value?.Replace("sid=", string.Empty).Trim();
+            var newSid = Guid.NewGuid().ToString();
+            int count = 0;
+            if (SessionStore.ContainsKey(sid))
+            {
+                SessionStore[sid]++;
+                count = SessionStore[sid];
+            }
+            else
+            {
+                count = 1;
+                sid = null;
+                SessionStore[newSid] = 1;
+            }
+            //we dont user ennuvironment.newline
+            string responseText =  "<h1>" + DateTime.UtcNow + "</h1>" + "<h1>" + count + "</h1>";
             string response = "HTTP/1.0 200 OK" + NewLine +
                                   "Server: SoftUniServer/1.0" + NewLine +
                                   "Content-Type: text/html" + NewLine +
+                                  (string.IsNullOrWhiteSpace(sid) ? "Set-Cookie: sid=" + newSid + NewLine : string.Empty) +
                                   //307 "Location: https://google.com" + NewLine +
                                   //"Content-Disposition: attachment; filename=alabala" + NewLine +
                                   "Content-Length: " + responseText.Length + NewLine +
