@@ -1,0 +1,110 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SIS.HTTP/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/SIS.HTTP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SIS.HTTP.dll": {}
+        }
+      },
+      "SIS.MvcFramework/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "SIS.HTTP": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SIS.MvcFramework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SIS.MvcFramework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SIS.HTTP/1.0.0": {
+      "type": "project",
+      "path": "../SIS.HTTP/SIS.HTTP.csproj",
+      "msbuildProject": "../SIS.HTTP/SIS.HTTP.csproj"
+    },
+    "SIS.MvcFramework/1.0.0": {
+      "type": "project",
+      "path": "../SIS.MvcFramework/SIS.MvcFramework.csproj",
+      "msbuildProject": "../SIS.MvcFramework/SIS.MvcFramework.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "SIS.MvcFramework >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\softuni\\C# Web Basics\\SIS January 2020\\SIS\\DemoApp\\DemoApp.csproj",
+      "projectName": "DemoApp",
+      "projectPath": "D:\\softuni\\C# Web Basics\\SIS January 2020\\SIS\\DemoApp\\DemoApp.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\softuni\\C# Web Basics\\SIS January 2020\\SIS\\DemoApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "D:\\softuni\\C# Web Basics\\SIS January 2020\\SIS\\SIS.MvcFramework\\SIS.MvcFramework.csproj": {
+              "projectPath": "D:\\softuni\\C# Web Basics\\SIS January 2020\\SIS\\SIS.MvcFramework\\SIS.MvcFramework.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

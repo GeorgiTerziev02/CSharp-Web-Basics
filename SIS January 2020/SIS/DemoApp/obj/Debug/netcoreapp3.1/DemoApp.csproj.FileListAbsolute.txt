@@ -1,0 +1,17 @@
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\DemoApp.exe
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\DemoApp.deps.json
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\DemoApp.runtimeconfig.json
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\DemoApp.runtimeconfig.dev.json
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\DemoApp.dll
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\DemoApp.pdb
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\SIS.HTTP.dll
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\SIS.MvcFramework.dll
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\SIS.MvcFramework.pdb
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\SIS.HTTP.pdb
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\obj\Debug\netcoreapp3.1\DemoApp.csprojAssemblyReference.cache
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\obj\Debug\netcoreapp3.1\DemoApp.AssemblyInfoInputs.cache
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\obj\Debug\netcoreapp3.1\DemoApp.AssemblyInfo.cs
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\obj\Debug\netcoreapp3.1\DemoApp.csproj.CopyComplete
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\obj\Debug\netcoreapp3.1\DemoApp.dll
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\obj\Debug\netcoreapp3.1\DemoApp.pdb
+D:\softuni\C# Web Basics\SIS January 2020\SIS\DemoApp\bin\Debug\netcoreapp3.1\wwwroot\icons8-puzzle-48.ico
