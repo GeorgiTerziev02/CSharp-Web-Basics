@@ -51,3 +51,5 @@ D:\softuni\C# Web Basics\SIS January 2020\SIS\SulsApp\bin\Debug\netcoreapp3.1\Vi
 D:\softuni\C# Web Basics\SIS January 2020\SIS\SulsApp\bin\Debug\netcoreapp3.1\wwwroot\css\bootstrap.min.css
 D:\softuni\C# Web Basics\SIS January 2020\SIS\SulsApp\bin\Debug\netcoreapp3.1\wwwroot\css\reset-css.css
 D:\softuni\C# Web Basics\SIS January 2020\SIS\SulsApp\bin\Debug\netcoreapp3.1\wwwroot\css\site.css
+D:\softuni\C# Web Basics\SIS January 2020\SIS\SulsApp\bin\Debug\netcoreapp3.1\Views\Users\Login.html
+D:\softuni\C# Web Basics\SIS January 2020\SIS\SulsApp\bin\Debug\netcoreapp3.1\Views\Users\Register.html
