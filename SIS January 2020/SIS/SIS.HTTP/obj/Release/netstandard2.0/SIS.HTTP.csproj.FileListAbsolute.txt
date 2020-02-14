@@ -1,8 +1,0 @@
-D:\softuni\C# Web Basics\SIS January 2020\SIS\SIS.HTTP\bin\Release\netstandard2.0\SIS.HTTP.deps.json
-D:\softuni\C# Web Basics\SIS January 2020\SIS\SIS.HTTP\bin\Release\netstandard2.0\SIS.HTTP.dll
-D:\softuni\C# Web Basics\SIS January 2020\SIS\SIS.HTTP\bin\Release\netstandard2.0\SIS.HTTP.pdb
-D:\softuni\C# Web Basics\SIS January 2020\SIS\SIS.HTTP\obj\Release\netstandard2.0\SIS.HTTP.csprojAssemblyReference.cache
-D:\softuni\C# Web Basics\SIS January 2020\SIS\SIS.HTTP\obj\Release\netstandard2.0\SIS.HTTP.AssemblyInfoInputs.cache
-D:\softuni\C# Web Basics\SIS January 2020\SIS\SIS.HTTP\obj\Release\netstandard2.0\SIS.HTTP.AssemblyInfo.cs
-D:\softuni\C# Web Basics\SIS January 2020\SIS\SIS.HTTP\obj\Release\netstandard2.0\SIS.HTTP.dll
-D:\softuni\C# Web Basics\SIS January 2020\SIS\SIS.HTTP\obj\Release\netstandard2.0\SIS.HTTP.pdb
